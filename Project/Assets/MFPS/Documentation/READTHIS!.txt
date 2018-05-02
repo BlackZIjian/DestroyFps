@@ -1,0 +1,146 @@
+Thank you for buying MFPS 2.0!.
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+**PLEASE NOTE** 
+
+that MFPS 2.0 can only be legally downloaded from:
+ www.lovattostudio.com
+ 
+
+If you've obtained MFPS via some other means, then note that your license is effectively invalid,
+as Lovatto Studio cannot provide support for pirated and/or potentially modified software.
+
+if you downloaded this illegally and you plan to use it to launch its own (commercial or non-commercial) game,
+ you can even buy MFPS here: http://lovattostudio.com/forum/viewtopic.php?f=15&t=229 and you will be added in list of buyers and use it without any problem,
+ otherwise you may cause serious problems because MFPS has a short list users who have the right to use this for any purpose.
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+****FOR FULL DOCUMENTATION PLEASE UNZIP THE 'documentation.zip' out side of the project.****
+or see online here: http://lovattostudio.com/documentations/mfps2/index.html
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+Requirement:
+
+Unity 3D 5.6++
+MFPS 2.0 v1.0
+Photon Cloud PUN 1.82++
+
+This project uses amazing network engine : "Photon Cloud (PUN)".
+
+You need not to prepare your own server and you can use the cloud server with 20 ccu for free!
+
+
+if you have questions, please feel free to ask me by e-mail.
+ brinerjhonson.lc@gmail.com
+or visit me forum: http://lovattostudio.com/forum/index.php
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+** Required **
+
+• Get Your AppID	
+• Register a Photon Cloud Account: https://cloud.exitgames.com/Account/SignUp
+• Get your AppID from the Dashboard
+
+2. Paste Your AppID	
+• In unity editor, Open [Window] -> [Photon Unity Networking] in the menu bar.	
+• Push [Setup] button, and paste your AppID to [Your AppID] field.	
+• Choose your region you want to set. You can select from EU/US/Asia/Japan.	
+• Push [Save] button
+
+3. Play Game!
+• Have fun!
+
+-To Start with MFPS 2.0, you must create a new project to clean.
+
+-Then import the "MFPS 2.0" package.
+
+-Once imported the package, you need to download and import the "Photon Unity Networking" package from the asset Store:
+https://www.assetstore.unity3d.com/en/#!/content/1786
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+Video Tutorials: 
+
+  Change Player Model: https://www.youtube.com/watch?v=zbkqIf_eux0&t
+
+- Now you are ready to start with MFPS.
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+**Change Log**
+
+- version ALPHA 1.0:-------------------------------------------------------------------------
+
+     - ap1:
+	       -ADD: Fall damage.
+		   -FIX: Health player show decimals.
+		   -ADD: Show max kills to win in the top scoreboard UI.
+		   -FIX: Auto Team selection.
+		   -IMPROVE: AutoTeam UI to UGUI.
+		   -IMPROVE: Chat input field design.
+		   -ADD: Now show the group target of chat (Team or All) in the input field.
+		   -ADD: Option for enable or disable bullet trail effect.
+		   -ADD: Option for enable / disable SSAO effect in settings menu in game.
+		   -ADD: Option for set up the sensitivity when AIM / Scope in settings menu.
+		   -FIX: Unity freeze after second play time.
+		   -ADD: Re-introduced spectator mode in game menu with UGUI.
+		   -RE-ADD: Crouch system integrated with mecanim.
+		   -FIX: Countdown start when leave the room manually.
+		   -IMPROVE: Black screen when leave match.
+
+     - ap2:
+	       -RE-ADD: Fire type text
+		   -FIX: Some UI Text not display in some resolutions.
+		   -ADD: Fast fire knife press 'V' key and back again to weapon.
+		   -FIX: Can change weapon when menu is open.
+		   -ADD: Multiplayer weapon pick up, now added as core feature (not more a add-on).
+		   -FIX: Chat target change if press 'T' or 'Y' while typed.
+		   -ADD: Player health regeneration, optional you can enable from the game data settings (in Resources folder).
+		   -ADD: Health regeneration settings: Regeneration speed and Start regeneration time after receive damage in bl_PlayerDamageManager.
+		   -ADD: Max ping option in room creating window, now players can set up the max ping to join in a room.	
+		   -IMPROVE: Now can see the name or position indicator of all players when are in spectator mode.
+		   -IMPROVE: High ping warning to UGUI.
+		   -ADD: Enable / Disable frame rate toggle in settings menu.
+		   -FIX: when you change a weapon while it's reloading and back to it again, the weapon get stuck.
+
+- version BETA 1.0:-------------------------------------------------------------------------
+
+      - b1:
+	       -ADD: Replace player tool wizard, this tool make more easy change the player model of player prefab (MFPS -> Tools -> Replace Player).
+		   -ADD: Now players can change of team in middle of room (Optional by the dev).
+	       -FIX: Player still can move when room menu is open.
+		   -FIX: When open chat with 'T' or 'Y' the input field appear with the char write.
+		   -FIX: Crosshair keep showing when open room menu.
+		   -FIX: Instance kit particle effect never get destroyed if player die before it play.
+		   -FIX: Can't unlock cursor when is in spectator mode.
+		   -ADD: Private match, now can create rooms and set a password to join.
+		   -IMPROVE: Water of example map now is interact-able with footsteps and bullet impact.
+		   -FIX: When AI bot pass over a pick up gun, it detect like it were the local player.
+		   -FIX: Array index exception in max ping list of lobby.
+		   -ADD: Background sound in lobby with fade in / out effect.
+		   -IMPROVED: Joining to room fade UI.
+		   -IMPROVE: Automatically Addons integration.
+		   -FIX: Update manager keep updating desactive game objects, this fix will improve the performance a little bit more.
+		   -CHANGE: Now player prefabs are assigned in 'GameData' instead of in bl_GameManager of each scene.
+		   -ADD: Now player can drop gun when die (Optional by the dev) and other players can take it.
+		   -ADD: Now can destroy the 'Dummy AI', you can  cause damage and destroy the AI over network.
+		   -IMPROVE: Also if you hit the AI and this are not follow other player it will follow you no matter the distance, also speed will increase.
+		   -FIX: Health regeneration synchronization.
+		   -FIX: Fire sound play each time that a remote player switch weapon.
+		   -IMPROVE: Remote player view rotation is not match with local view.
+
+	   - b2:
+	       -ADD: QUICK PLAY: with this new button in lobby, player can join easy to a random available room or if there are no one, will create one automatically with all settings randomized (time, max players, game mode, etc...)
+	       -FIX: Show password instead of room name in the room list in lobby.
+		   -ADD: Lobby pop up message when player has been kicked from match due high ping.
+		   -FIX: Auto Team Selection not work on FFA game mode.
+		   -FIX: Error when explode a bomb in local client.
+		   -IMPROVE: Now you can set the max times that a player can change of team per match in Game Data.
+		   -FIX: If press "Change Team" on in-game menu and then press "ESC" without click join buttons, "JOIN" buttons still appears on screen. 
+		   -FIX: If two or more players have the same name in a room, only one is displayed in scoreboard.
+		   -ADDONS COMPATIBILITY: Bomb Defuse, Covert Point, HUD Waypoint, Customizer and Player Selector all with automatic integration.
+		   -FIX: 'Joined in' + team name text not update with the correct team name from game data.
+		   -FIX: Network shotgun throw grenades instead of bullets.
+		   -ADD: New options for set kill cam as 'static' in Game Data, if this is true kill cam will not move from ragdoll head, if it's false will can rotate the camera.
+		   -FIX: Draw null texture in KillCam cause Spam of warning logs in console.
+		   -ADD: Documentation, introduce a documentation file still WIP, with some basis tutorial, it will be improve with each update.
+		   -ADD: 'Documentation' button under MFPS -> Documentation (on top bar).
+
+Website: http://lovattostudio.com/
+Forum: http://lovattostudio.com/forum/index.php
